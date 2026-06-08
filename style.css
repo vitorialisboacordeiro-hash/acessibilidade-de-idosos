@@ -1,0 +1,130 @@
+/* Configurações Gerais de Acessibilidade */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    color: #1a1a1a;
+    line-height: 1.6;
+    /* Tamanho de fonte maior para facilitar a leitura de idosos */
+    font-size: 20px; 
+}
+
+/* Cabeçalho */
+header {
+    background-color: #003366; /* Azul escuro para alto contraste */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #ffcc00; /* Detalhe em amarelo */
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.introducao {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.introducao h2 {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Grade de Dicas (Cards) */
+.grade-dicas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espaço grande entre os blocos */
+    margin-bottom: 40px;
+}
+
+.card-dica {
+    background-color: #ffffff;
+    border: 3px solid #003366; /* Borda grossa bem visível */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-dica h3 {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.card-dica .icone {
+    font-size: 2rem;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.card-dica p {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+/* Seção de Suporte e Botão */
+.suporte {
+    background-color: #ffe6e6; /* Fundo suave avermelhado para atenção */
+    border: 3px solid #cc0000;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.suporte h2 {
+    color: #cc0000;
+    margin-bottom: 15px;
+}
+
+.botao-urgente {
+    display: inline-block;
+    background-color: #cc0000;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #800000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Efeito ao passar o mouse ou focar no botão (ótimo para navegação por teclado) */
+.botao-urgente:hover, .botao-urgente:focus {
+    background-color: #990000;
+    outline: 4px solid #ffcc00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
